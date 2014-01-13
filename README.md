@@ -25,7 +25,7 @@ Here's all you need to do...
 
 	git clone https://github.com/caesarfeta/sqUIsh sqUIsh
 
-Or if you use git submodules...
+Or if you know how to use git submodules.
 
 	git submodule add https://github.com/caesarfeta/sqUIsh sqUIsh
 
@@ -41,18 +41,13 @@ Open your text editor and make a list of paths to the Javascript files you want.
 	conf/samples/jslib/src/js/Culuh.js
 	conf/samples/jslib/src/js/TimeStamp.js
 
-Notice you can use paths relative to the sqUIsh directory.
+* Notice you can use paths relative to the sqUIsh directory.
 
-Name your list something descriptive like...
+Name your list something descriptive and save it in the conf directory.
 
-	sample-v1.list
+	conf/sample-v1.list
 
-Why not save it in the sqUIsh configuration folder ( sqUIsh/conf ) ?
-Change to the sqUIsh project directory
-
-	cd sqUish
-
-Then run the sqUI.sh script passing along your the list you just created.
+Run the sqUI.sh script passing along your the list you just created.
 
 	./sqUI.sh conf/sample-v1.list
 
