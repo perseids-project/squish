@@ -10,6 +10,10 @@ If you want other people to use your code you need to lower the barrier of entry
 
 All you have to do is make a list of Javascript files and run the sqUI.sh shell script and you'll have a Javascript file that other developers will want to use and webservers will want to... ummmmm... serve.
 
+### Build squished-up CSS files
+
+So you can also use sqUIsh to "squish" CSS files together.  So you can turn multiple CSS files into one that WON'T be minified.  Sorry... Still working on it.
+
 ## Requirements
 * Unix
 * Python
@@ -40,7 +44,7 @@ If you want sample Javascript files to play with instead of using your own run..
 	cd sqUIsh; git submodule update --init;
 
 ## How to use.
-
+## Javascript
 Open your text editor and make a list of paths to the Javascript files you want.
 
 	conf/samples/jslib/src/js/AutoCanvas.js
@@ -49,17 +53,21 @@ Open your text editor and make a list of paths to the Javascript files you want.
 
 * Notice you can use paths relative to the sqUIsh directory.
 
-Name your list something descriptive and save it in the conf directory.
+Name your list something descriptive add *.js.list* and save it in the conf directory.
 
-	conf/sample-v1.list
+	conf/sample-v1.js.list
 
 Run the sqUI.sh script passing along your the list you just created.
 
-	./sqUI.sh conf/sample-v1.list
+	./sqUI.sh conf/sample-v1.js.list
 
 After the script completes, take a peak inside the build folder.  You will see the following.
 
 	build/sample-v1.js
 	build/sample-v1.min.js
+
+## CSS
+
+Same as above except you save your list as *.css.list* instead of *.js.list*
 
 That's it!  You know what to do from here.
