@@ -13,10 +13,16 @@ All you have to do is make a list of Javascript files and run the sqUI.sh shell 
 ## Requirements
 * Unix
 * Python
+* Internet Connection
+
+## Warning
+
+This script uses a library which uses Google's closure-compiler API.  This means your code will be exposed to them potentially.  Hopefully your code doesn't need to be super duper secret, in which case... why are you using Javascript?
 
 ## Installation
 
 So your computer is running something Unix-like? Linux and Mac OSX both work.
+The Internet is accessible from this computer?
 Can you run Python scripts?
 
 You can!  Wonderful!
