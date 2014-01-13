@@ -1,0 +1,3 @@
+[submodule "conf/samples/jslib"]
+	path = conf/samples/jslib
+	url = https://github.com/caesarfeta/jslib
