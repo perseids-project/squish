@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make the build directory
+mkdir build
+
 # Extract the output filename from the list.
 list=$1
 outName=$(basename "$list")
