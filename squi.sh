@@ -34,9 +34,9 @@ squish() {
     #-------------------------------------------------------------
     #  Javascript files get minified
     #-------------------------------------------------------------
-    if [ $typ=="JS" ];
+    if [ $typ == "js" ];
     then
-        echo "squi.sh -- Minifying ${outName}"
+        echo "squi.sh -- Minifying ${outName}.${typ}"
         lib/closure-compiler-cli/closure_compiler_cli.py --level=simple --file=../$outName.js > ../$outName.min.js
         
         #-------------------------------------------------------------
