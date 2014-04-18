@@ -11,5 +11,6 @@ for f in fs:
     outData = outData + code.read() + "\n"
 
 outName = sys.argv[2]
-outFile = open( '../' + outName + ".js", "w" )
+ext = sys.argv[3]
+outFile = open( '../' + outName + "." + ext, "w" )
 outFile.write( outData )
