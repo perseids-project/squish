@@ -1,17 +1,12 @@
 # squish
 squish is a super simple project build system for Javascript.
-You don't need npm
-You don't need node.js
-You don't need grunt
 Your requirements are a Unix shell, Python, and an Internet connection.
+Chances are if you're a web-developer you have these tools at your fingertips.
 
-### Build minified Javascript files.
-Build a minified and a non-minified Javascript file.
-Make a list of Javascript files and run the squish/squi.sh shell script.
+## What does squish actually do?
+It takes a list of Javascript files, squishes all the code in each file together, and then minifies everything into one glorious Javascript file..
 
-### Build squished-up CSS files
-So you can also use sqUIsh to "squish" CSS files together.
-Turn multiple CSS files into one without minifying them.
+You can also use sqUIsh to "squish" CSS files together without the minification.
 
 ## Requirements
 * Unix
@@ -19,9 +14,8 @@ Turn multiple CSS files into one without minifying them.
 * Internet Connection
 
 ## Warning
-This script uses a library which uses Google's closure-compiler API.
+squish uses Google's closure-compiler web API.
 This means your code will be exposed to them potentially.
-Hopefully your code doesn't need to be super duper secret.
 
 ## Installation
 Navigate to the root of your project directory and run.
@@ -48,15 +42,16 @@ Name your list after your project and add *.js.list* and save it in your project
 
 	project.js.list
 
-Run the squish/squi.sh script passing along your the list you just created.
+Run the squish/squi.sh script from your project root passing along the list you just created.
 
 	squish/squi.sh project.js.list
 
-After the script completes, look at the root of your project folder.  You will see the following.
+After the script completes you should see the following.
 
 	project.js
 	project.min.js
 
 ## CSS
 Same as above except you save your list as *.css.list* instead of *.js.list*
-That's it!  You know what to do from here.
+That's it! 
+You know what to do from here.
