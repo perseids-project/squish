@@ -7,10 +7,10 @@ with open ( sys.argv[1] ) as f:
 
 outData = ''
 for f in fs:
-    code = open( f, "r")
+    code = open( '../' + f, "r")
     outData = outData + code.read() + "\n"
 
 outName = sys.argv[2]
 ext = sys.argv[3]
-outFile = open( '../' + outName + "." + ext, "w" )
+outFile = open( outName + "." + ext, "w" )
 outFile.write( outData )
