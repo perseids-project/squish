@@ -1,5 +1,9 @@
 # squish
-Squish is a simple build system for Javascript.
+squish is a super simple project build system for Javascript.
+You don't need npm
+You don't need node.js
+You don't need grunt
+Your requirements are a Unix shell, Python, and an Internet connection.
 
 ### Build minified Javascript files.
 Build a minified and a non-minified Javascript file.
