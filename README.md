@@ -38,15 +38,16 @@ Open your text editor and make a list of paths to the Javascript files you want.
 	squish/samples/jslib/src/js/Culuh.js
 	squish/samples/jslib/src/js/TimeStamp.js
 
-Name your list after your project and add *.js.list* and save it in your project root.
+Name your list after your project and add *.js.list* and save it somewhere inside your project's directory.
+I like to create a directory called *build* in the project root to store the *.list* files.
 
-	project.js.list
+	build/project.js.list
 
 Run the squish/squi.sh script from your project root passing along the list you just created.
 
-	squish/squi.sh project.js.list
+	squish/squi.sh build/project.js.list
 
-After the script completes you should see the following.
+After the script completes you should see the following in your project root.
 
 	project.js
 	project.min.js
