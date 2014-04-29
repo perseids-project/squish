@@ -2,7 +2,7 @@
 squish is a very simple project build system for Javascript and CSS.
 It takes a list of Javascript files, squishes all the code in each file together, and then minifies everything.
 It will output two *.js* files.  One is just squished, and the other squished and minified.
-It can also squish CSS files together without minification.
+It will also squish CSS files together without minification.
 
 ## Requirements
 * Unix
@@ -12,7 +12,7 @@ It can also squish CSS files together without minification.
 ## Warning
 squish uses Google's closure-compiler web API.
 This means your code will be exposed to them,
-so don't use squish if you don't trust Google.
+so don't use squish if you don't trust Google with your code.
 
 ## Installation
 Navigate to the root of your project directory and run.
@@ -31,10 +31,12 @@ If you want sample Javascript files to play with instead of using your own run..
 ### Javascript
 Open your text editor and make a list of paths to the Javascript files you want.
 If you're using relative paths make sure they are relative to the project root.
+Paths can be URLs as well.
 
 	squish/samples/jslib/src/js/AutoCanvas.js
 	squish/samples/jslib/src/js/Culuh.js
 	squish/samples/jslib/src/js/TimeStamp.js
+	http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
 
 Name your list after your project and add *.js.list* and save it somewhere inside your project's directory.
 I like to create a directory called *build* in the project root to store the *.list* files.
