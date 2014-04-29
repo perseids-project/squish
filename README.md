@@ -1,12 +1,8 @@
 # squish
-squish is a super simple project build system for Javascript.
-Your requirements are a Unix shell, Python, and an Internet connection.
-Chances are if you're a web-developer you have these tools at your fingertips.
-
-## What does squish actually do?
-It takes a list of Javascript files, squishes all the code in each file together, and then minifies everything into one glorious Javascript file..
-
-You can also use sqUIsh to "squish" CSS files together without the minification.
+squish is a very simple project build system for Javascript and CSS.
+It takes a list of Javascript files, squishes all the code in each file together, and then minifies everything.
+It will output two *.js* files.  One is just squished, and the other squished and minified.
+It can also squish CSS files together without minification.
 
 ## Requirements
 * Unix
@@ -15,7 +11,8 @@ You can also use sqUIsh to "squish" CSS files together without the minification.
 
 ## Warning
 squish uses Google's closure-compiler web API.
-This means your code will be exposed to them potentially.
+This means your code will be exposed to them,
+so don't use squish if you don't trust Google.
 
 ## Installation
 Navigate to the root of your project directory and run.
@@ -31,8 +28,9 @@ If you want sample Javascript files to play with instead of using your own run..
 	cd squish; git submodule update --init;
 
 ## How to use.
-## Javascript
+### Javascript
 Open your text editor and make a list of paths to the Javascript files you want.
+If you're using relative paths make sure they are relative to the project root.
 
 	squish/samples/jslib/src/js/AutoCanvas.js
 	squish/samples/jslib/src/js/Culuh.js
@@ -43,7 +41,7 @@ I like to create a directory called *build* in the project root to store the *.l
 
 	build/project.js.list
 
-Run the squish/squi.sh script from your project root passing along the list you just created.
+Run the *squish/squi.sh* script from your project root passing along the list you just created.
 
 	squish/squi.sh build/project.js.list
 
@@ -52,7 +50,6 @@ After the script completes you should see the following in your project root.
 	project.js
 	project.min.js
 
-## CSS
+### CSS
 Same as above except you save your list as *.css.list* instead of *.js.list*
-That's it! 
-You know what to do from here.
+That's it! Enjoy!
